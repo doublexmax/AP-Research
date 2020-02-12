@@ -8,9 +8,10 @@ public class Main {
   public static HashMap<Integer, Integer> keys = new HashMap<>();
   public static void main(String[] args) throws InterruptedException {
     int length = 5;
-	SecondBlock(5);
-  System.exit(0);
-	set();
+    //Enable these two lines when determining absolute threshold
+	  //SecondBlock(5);
+    //System.exit(0);
+	  set();
 
 	while (!threeTimes(keys)){
 		test(length);
@@ -127,7 +128,7 @@ public class Main {
 		  map.put(i, 0);
 		  correct.put(i, 0);
 	  }
-	  for (int j=0; j<2; j++){
+	  for (int j=0; j<40; j++){
 		  randomTrue=true;
 		  int choice=0;
 		  while (randomTrue){
